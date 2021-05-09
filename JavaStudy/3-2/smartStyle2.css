@@ -49,8 +49,55 @@
 
     @media screen and (max-width: 479px) {
 
-        #wrapper {
+        .contents {
+            float: none; 
+            }
+
+        .header {
             width: 150px;
+            height: 100px;
         }
-    
+        
+        .left {
+            width: 150px;
+            height: 100px;
+            float: none;
+        }
+        .content {
+            width: 150px;
+            height: 350px;
+            float: none;
+        }
+
+        .content-top-right {
+            width: 150px;
+            height: 100px;
+            float: none;
+        }
+        
+        .content-top-left {
+            width: 150px;
+            height: 150px;
+            float: none;
+        }
+
+        .content-top-left-upper {
+            width: 150px;
+            height: 50px;
+        }
+        
+        .content-top-left-lower {
+            width: 150px;
+            height: 100px;
+        }
+        
+        .content-lower {
+            width: 150px;
+            height: 100px;
+        }	
+        
+        .footer {
+            width: 150px;
+            height: 100px;
+        }
     }
