@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.main {
+    padding-top :50px;
+	padding-bottom :50px;
+}
+
+.header {
+	background-color :gray;
+ 	display: flex;
+ 	flex-wrap: wrap;
+}
+
+.title {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+
+.date {
+	padding: 15px;
+	font-size: 10px;
+}
+
+.footer {
+	background-color :gray;
+}
+
+.title2 {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
