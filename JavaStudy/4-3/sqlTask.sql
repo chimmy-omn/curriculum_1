@@ -15,12 +15,9 @@ SELECT * FROM store_table ORDER BY store_nameabc;
 -- 3. 在庫テーブルに店舗テーブル、商品テーブルを「内部結合」し、店舗名・商品名・在庫数を全て取得しなさい。
 --
 
-SELECT goods_name FROM goods_table
-  UNION
-  SELECT   CAST (quantity AS VARCHAR) FROM stock_table
-  UNION
-  SELECT store_name FROM store_table
- 
+SELECT quantity, store_name, goods_name FROM stock_table
+JOIN store_table ON stock_table.store_code = store_table.store_code
+JOIN goods_table ON stock_table.goods_code = goods_table.goods_code
  
 -- 4. 商品テーブルから全商品の単価の平均値を抽出しなさい。
 -- 
@@ -46,6 +43,7 @@ VALUES
  
 -- 7. 在庫テーブルの商品コード='S987'、かつ、店舗コード='EA01'に対して、「在庫数=10、更新日付=本日日付」で更新しなさい。※実行後のSELECT結果も貼付すること。
 
+UPDATE
 stock_table
 SET 
 quantity = '10',
